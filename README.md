@@ -5,9 +5,11 @@
 
 ![image](https://github.com/user-attachments/assets/f6017fdb-a4e4-4f7a-b9c0-ce398d5b7024)
 
-❗Enum 타입의 변환
+❗Enum 타입의 변환.
+
 열거형 데이터를 변환하는 경우 엑셀에서 타입 이름 앞에 접두사 #E_를 붙여야 변환이 가능합니다.
 ![image](https://github.com/user-attachments/assets/44f0e643-9e56-49f1-84dd-103c4844b8f9)
 
 ❗cs 파일 커스텀
+
 변환되는 cs파일의 내용을 변경하고 싶으시다면 bin/Debug/net8.0-windows 파일 내의 ClassTemplate.txt 파일의 내용을 수정하시면 됩니다.
