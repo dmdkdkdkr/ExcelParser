@@ -8,7 +8,7 @@
 ❗Enum 타입의 변환.
 
 열거형 데이터를 변환하는 경우 엑셀에서 타입 이름 앞에 접두사 #E_를 붙여야 변환이 가능합니다.
-![image](https://github.com/user-attachments/assets/44f0e643-9e56-49f1-84dd-103c4844b8f9)
+![enum](https://github.com/user-attachments/assets/658073a0-6807-437d-bbc9-1b910ba19cbc)
 
 ❗cs 파일 커스텀
 
