@@ -1,0 +1,4 @@
+TB_ExcelList=C:\Users\inh71\OneDrive\바탕 화면\개인공부_정리\ExcelParser\Excels\ConvertList.txt
+TB_ExcelPath=C:\Users\inh71\OneDrive\바탕 화면\개인공부_정리\ExcelParser\Excels
+TB_CsPath=C:\Users\inh71\OneDrive\바탕 화면\개인공부_정리\ExcelParser\Cs
+TB_JsonPath=C:\Users\inh71\OneDrive\바탕 화면\개인공부_정리\ExcelParser\Json

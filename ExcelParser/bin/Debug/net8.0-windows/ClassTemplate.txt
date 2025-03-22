@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using UnityEngine;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System.Linq;
+using System.Numerics;
+
+[Serializable]
+public class #TableName# : ITable
+{
+    [JsonProperty] public #TableRow#[] Rows { get; private set; }
+    Dictionary<string, #TableRow#> rowByKey = new Dictionary<string, #TableRow#>();
+
+    public #TableRow# this[string key] => rowByKey[key];
+    public #TableRow# this[int i] => Rows[i];
+
+    public Dictionary<string, #TableRow#>.KeyCollection Keys => rowByKey.Keys;
+    public int Count => Rows.Count();
+
+    public void Init(string json)
+    {
+        var _table = JsonConvert.DeserializeObject<#TableName#>(json);
+        Rows = _table.Rows;
+
+        var sb = new StringBuilder();
+        sb.Append($"{nameof(#TableName#)}: Loading Complete\n");
+        for (int i = 0; i < Rows.Length; i++)
+        {
+            var row = Rows[i];
+            var key = row.GetKey();
+            rowByKey.Add(row.GetKey(), Rows[i]);
+            sb.Append($"Key: {row.GetKey()}\n");
+        }
+        Debug.Log(sb.ToString());
+    }
+}
